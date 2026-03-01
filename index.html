@@ -1,19 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anki</title>
 
-  <!-- Makes iOS treat it more like an app -->
+  <!-- Make it behave more like an app on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <!-- Your custom icon -->
+  <!-- Manifest (optional) -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Custom icon -->
   <link rel="apple-touch-icon" href="icon.png">
 
-  <!-- Instant redirect -->
-  <meta http-equiv="refresh" content="0; url=https://ankiweb.net">
-
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      background: #f8f8f8;
+    }
+    .open-btn {
+      display: inline-block;
+      padding: 20px 40px;
+      font-size: 24px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    .open-btn:hover {
+      background: #1558b0;
+    }
+  </style>
 </head>
 <body>
+  <a href="https://ankiweb.net" class="open-btn" target="_blank">Open AnkiWeb</a>
 </body>
 </html>
